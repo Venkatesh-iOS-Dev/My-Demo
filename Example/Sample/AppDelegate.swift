@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         // Override point for customization after application launch.
         let appKey = "<#Enter App Key#>"
         let accessKey = "<#Enter Access key#>"
-        ZohoSalesIQ.initWithAppKey("CrBJ9braUTiTEEzft8hll31X6cHDHGZnTwTbMa2Xs0umlHiIXa08GlyKVVI8S173", accessKey: "aibwlL4DebUSXO0jpJylqVAlxEMo9skHyXaUK2TU%2FntphzgPl4hh1cXy7cik3hcMWq85BgbJ%2BUnn3cq%2FzcqGyFxLbvo7lfwB9l5YT3yUzlPGWt8gK7qr6eM6ZcUneQMW61Q4ENCI2U%2FSE%2Bz7mIMVQEr2pso8SsuYOgHZqMsgE%2FU%3D")
+        ZohoSalesIQ.initWithAppKey(appKey, accessKey: accessKey)
         ZohoSalesIQ.showLauncher(true)
         ZohoSalesIQ.delegate = self
         ZohoSalesIQ.Chat.delegate = self
