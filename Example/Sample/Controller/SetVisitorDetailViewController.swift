@@ -157,8 +157,8 @@ class SetVisitorDetailViewController: UIViewController, UIViewControllerTransiti
     
     @objc func startChatAction() {
         if let name = nameTextField.text { setVisitorName(name) }
-        if let email = emailTextField.text { setVisitorName(email) }
-        if let contact = contactTextField.text { setVisitorName(contact) }
+        if let email = emailTextField.text { setVisitorEmail(email) }
+        if let contact = contactTextField.text { setVisitorContactNumber(contact) }
         if let key = visitorInfoKeyTextField.text, let value = visitorInfoValueTextField.text { updateVisitorInfo(key, value) }
         startChat(questionTextField.text ?? "")
     }
